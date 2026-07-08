@@ -24,9 +24,9 @@ print(matching_pennies)
 
 # %%
 # 3 Creating a 3 player game using Gambit
-import pygambit as gbt
+from pygambit.gambit import Game
 
-g = gbt.Game.new_table([2, 2, 2], title="3 player game")
+g = Game.new_table([2, 2, 2], title="3 player game")
 p1, p2, p3 = g.players
 
 g[(0, 0, 0)][p1] = 1
